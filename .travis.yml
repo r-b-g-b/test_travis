@@ -7,6 +7,9 @@ virtualenv:
     system_site_packages: true
 
 script:
+    - ls ~/.ssh/known_hosts
+    - cat ~/.ssh/known_hosts
+    - ssh-keygen github.com >> ~/.ssh/known_hosts
     - virtualenv py3 --python=python3
     - source py3/bin/activate
     - whoami
