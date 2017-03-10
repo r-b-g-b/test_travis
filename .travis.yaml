@@ -1,0 +1,15 @@
+language: python
+
+python:
+    - 2.7
+
+virtualenv:
+    system_site_packages: true
+
+script:
+    - virtualenv py3 --python=python3.5
+    - source py3/bin/activate
+    - whoami
+    - id $(whoami)
+    - mkdir tmp
+    - deactivate
