@@ -11,5 +11,5 @@ script:
     - source py3/bin/activate
     - whoami
     - id $(whoami)
-    - mkdir tmp
+    - mkdir /wefwef
     - deactivate
